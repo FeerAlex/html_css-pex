@@ -1,0 +1,154 @@
+.preview {
+	height: 890px;
+	background: url('../img/bg.jpg') no-repeat;
+	position: relative;
+
+	&__sentence {
+		position: absolute;
+		bottom: 253px;
+		left: 205px;
+	}
+}
+
+.sentence {
+	width: 520px;
+	text-align: right;
+	color: $white;
+
+	&__title {
+		font-size: 3.33rem;
+		font-weight: normal;
+		margin: 0 0 46px 0;
+		line-height: 70px;
+	}
+
+	&__desc {
+		text-align: center;
+		display: inline-block;
+	}
+
+	&__btn {
+		background-color: rgb(136, 36, 205);
+		box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4);
+		text-align: center;
+		border-radius: 60px;
+		font-weight: bold;
+		font-size: 1.2rem;
+		color: $white;
+		margin-bottom: 16px;
+	    display: inline-block;
+	    text-decoration: none;
+	    padding: 20px 62px;
+	    transition: all .3s ease-in-out;
+
+	    &:hover {
+	    	background-color: darken(rgb(136, 36, 205), 5%);
+	    }
+	}
+
+	&__postscript {
+		font-size: 0.8rem;
+	}
+}
+
+.news {
+	background: #2e3b4e;
+	border-top: 1px solid rgba($white, .1);
+	color: $white;
+	font-size: 1rem;
+	padding: 76px 0 77px 0;
+	position: relative;
+	
+	&__list {
+		width: 820px;
+		margin: 0 auto;
+		list-style: none;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		width: 400px;
+		margin-bottom: 61px;
+	}
+
+	&__title {
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-bottom: 24px;
+	}
+
+	&__desc {
+		line-height: 26px;
+		font-weight: 300;
+	}
+
+	&__shape {
+		position: absolute;
+		transform: translateX(-50%);
+	    left: 50%;
+	    bottom: -35.3px;
+	    z-index: 10;
+	}
+}
+
+
+.wicked {
+	position: relative;
+	height: 539px;
+	background: url('../img/bg2.jpg') no-repeat;
+	color: $white;
+
+	&:after {
+		content: "";
+		right: 0;
+		bottom: 0;
+		left: 0;
+		top: 0;
+		background: rgba(#e7526b, .8);
+		position: absolute;
+	}
+
+	&__content {
+		width: 550px;
+		margin: 0 auto;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		top: 46%;
+	    left: 50%;
+		z-index: 1;
+		text-align: center;
+	}
+
+	&__title {
+		font-size: 2.33rem;
+		font-weight: 300;
+		margin-bottom: 14px;
+	}
+
+	&__desc {
+		width: 85%;
+		margin: 0 auto;
+		line-height: 26px;
+		margin-bottom: 30px;
+		font-weight: 300;
+	}
+
+	&__btn {
+		display: inline-block;
+		background: $white;
+		color: $pink;
+		font-weight: 900;
+		font-size: 1.2rem;
+		text-decoration: none;
+		border-radius: 62px;
+		padding: 21px 92px;
+		transition: all .3s ease-in-out;
+
+		&:hover {
+	    	background-color: darken($white, 5%);
+	    	color: darken($pink, 5%);
+	    }
+	}
+}

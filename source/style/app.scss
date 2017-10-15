@@ -1,0 +1,35 @@
+$white: #fff;
+$purple: #644a60;
+$gray: #626262;
+$pink: #d54c63;
+
+* {
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+html {
+	font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  margin: 0;
+  // font-family: 'Open Sans', sans-serif;
+  // font-family: 'Merriweather', serif;
+}
+
+.wrapper {
+	max-width: 1600px;
+	margin: 0 auto;
+	position: relative;
+}
+.container {
+	width: 1180px;
+  margin: 0 auto;
+}
+
+@import 'common/fonts';
+@import 'common/mixins';
+@import 'partials/header';
+@import 'pages/index';

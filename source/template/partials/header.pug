@@ -1,0 +1,12 @@
+header.header
+	.header__logo.logo
+		a(href="/").logo__link
+			img(src="assets/img/logo.svg" alt="pex").logo__img
+	.header__nav.nav
+		ul.nav__list
+			each val in ['About', 'How It Works', 'Services', 'FAQ', 'Contact']
+				li.nav__item
+					a(href="#").nav__link= val
+	.header__search
+		.search
+			input(type="text" placeholder="Search Website").search__input

@@ -15,7 +15,7 @@ html
     //- favicon block end
     link(rel='stylesheet' href='/assets/css/foundation.css')
     link(rel='stylesheet' href='/assets/css/app.css')
-    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans:300,400,600")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans:300,400,600,700,800")
 
     script(src='/assets/js/foundation.js' defer)
     script(src='/assets/js/app.js' defer)
@@ -27,24 +27,4 @@ html
   body
     .wrapper
       include partials/header
-      .preview
-        .preview__sentence.sentence
-          h1.sentence__title Designs your eyeballs will thank you for
-          .sentence__desc
-            a(href="#").sentence__btn.btn Get Started Today
-            p.sentence__postscript Lorem ipsum dolor sit amet, consectetur
-      article.news
-        .container
-          ul.news__list
-            each val in ['A fantastic heading', 'Good day blokes', 'Blaz Robar for president', 'vote for robar']
-              li.news__item
-                .news__title= val
-                .news__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        img(src="assets/img/shape.svg").news__shape
-      article.wicked
-        .wicked__content
-          h5.wicked__title Wicked &amp; whack, bang bang boo!
-          p.wicked__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-          a(href="#").wicked__btn.btn Get Started Today
-      article.need
       block content

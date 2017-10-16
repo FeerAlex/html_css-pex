@@ -1,6 +1,65 @@
 extends ../_template
 
 block variables
-  - var title = 'Home page'
+	- var title = 'Home page'
 
 block content
+	.preview
+		.preview__sentence.sentence
+			h1.sentence__title Designs your eyeballs will thank you for
+			.sentence__desc
+				a(href="#").sentence__btn.btn.btn_purple Get Started Today
+				p.sentence__postscript.postscript Lorem ipsum dolor sit amet, consectetur
+	
+	article.news
+		.container
+			ul.news__list
+				each val in ['A fantastic heading', 'Good day blokes', 'Blaz Robar for president', 'vote for robar']
+					li.news__item
+						.news__title= val
+						.news__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+		img(src="assets/img/shape.svg").news__shape
+	
+	article.wicked.wicked_pink
+		.wicked__content.content.content_pink
+			h5.wicked__title Wicked &amp; whack, bang bang boo!
+			p.wicked__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+			a(href="#").wicked__btn.btn.btn_pink Get Started Today
+	
+	article.need
+		img(src="assets/img/need1.jpg").need__img
+		.need__desc.need__desc_right
+			h6.need__title A heading is what you need here
+			p.need__text Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+			p.need__post-text Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+	
+	article.wicked.wicked_purple
+		.wicked__content.content.content_purple
+			h5.wicked__title Experience the rush today
+			p.wicked__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipisicing elit.
+			a(href="#").wicked__btn.btn.btn_purple Get Started Today
+			.wicked__postscript.postscript Lorem ipsum dolor sit amet, consectetur
+	
+	article.photography
+		.photography__content
+			a(href="#").photography__btn.btn__transparent Photography
+			p.photography__title Lorem ipsum dolor sit amet consectetur adipisicing elit
+			.photograhy__author.author
+				.author__photo
+					img(src="assets/img/user.jpg").author__img
+				span.author__desc Blaz Robar, god like web designer
+	
+	article.need
+		.need__desc.need__desc_left
+			h6.need__title A heading is what you need here.
+			p.need__text Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+			p.need__post-text Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+		img(src="assets/img/need2.jpg").need__img
+	
+	article.touch
+		h6.touch__title Get in touch
+		p.touch__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		a(href="#").touch__site help@yomuma.com
+	
+	article.touch-foot
+		p.touch-foot__text psum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
